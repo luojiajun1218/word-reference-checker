@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Word 参考文献核对助手</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="vendor/jszip.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="top"><div class="bar">
+    <h1>Word 参考文献核对助手</h1>
+    <label class="choose" for="wordfile">选择 Word 文件</label>
+    <input id="wordfile" type="file" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document" hidden>
+    <a class="jump" href="#references">跳到参考文献</a>
+    <button id="back" type="button">返回文章开头</button>
+  </div></header>
+  <p class="note" id="note" role="status">选择 .docx 文件开始阅读。文件在本机浏览器中解析；点击文献时，会将检索词发送给知网或 Google Scholar。</p>
+  <p class="note" id="click-status" role="status" hidden></p>
+  <main class="sheet" id="sheet"><div class="welcome"><h2>打开 Word，逐条核对文献</h2><p>选择 .docx 文件后，点击文末参考文献即可搜索。中文题名打开知网，其他条目打开 Google Scholar。</p><p>建议将本文和搜索结果窗口左右并排。Google Scholar 的引用弹窗可通过可选的浏览器用户脚本自动打开。</p></div></main>
+</body>
+</html>

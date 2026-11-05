@@ -1,0 +1,17 @@
+# Personal documents and generated previews must not be committed.
+*.doc
+*.docx
+*.docm
+*.dotx
+*.pdf
+*.odt
+*.rtf
+*.pages
+*.zip
+*.png
+*.jpg
+*.jpeg
+*.webp
+.DS_Store
+node_modules/
+word-preview/
